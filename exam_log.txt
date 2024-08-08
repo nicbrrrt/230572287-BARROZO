@@ -1,0 +1,121 @@
+    1  mkdir linux_practice
+    2  cd linux_practice
+    3  touch notes.txt
+    4  ls
+    5  notes.txt >> notes.txt
+    6  echo noted.txt >> notes.txt
+    7  cat notes.txt
+    8  echo Hello, Linux! > notes.txt
+    9  echo "This is a practical exam" >> notes.txt
+   10  head notes.txt
+   11  tail notes.txt
+   12  mkdir subdir
+   13  mv notes.txt subdir/notes.txt_moved
+   14  mv subdir practice_subdir
+   15  cp notes.txt copy_of_notes.txt
+   16  cd practice_subdir
+   17  cp notes.txt copy_of_notes.txt linux_practice
+   18  cp notes.txt copy_of_notes.txt 230572287-BARROZO/linux_practice
+   19  ls
+   20  cp notes.txt
+   21  cp notes.txt_moved copy_of_notes.txt_moved linux_practice
+   22  cp notes.txt copy_of_notes.txt
+   23  cp notes.txt_moved copy_of_notes.txt_moved
+   24  ls
+   25  mv copy_of_noted.txt_moved linux_practice
+   26  top
+   27  df -h
+   28  SSH
+   29  ls SSH
+   30  update SSH
+   31  apt update SSH
+   32  apt update 
+   33  SSH --v
+   34  SSH --version
+   35  php
+   36  php --version
+   37  mysql
+   38  mysql --version
+   39  apache2 --version
+   40  apachectl --version
+   41  apack --version
+   42  apache
+   43  apache2
+   44  python --version
+   45  openjdk --version
+   46  jdk
+   47  jdb --version
+   48  python --v
+   49  python -v
+   50  history
+   51  date
+   52  cal
+   53  du
+   54  cd
+   55  date
+   56  cal
+   57  du
+   58  ssh --v
+   59  php --v
+   60  mysql --v
+   61  cal
+   62  java --version
+   63  sdl --version
+   64  pkg install ssh
+   65  pkg install sqllite
+   66  cd 230572287-BARROZO
+   67  git branch finalexam
+   68  git add notes.txt
+   69  notes.txt_moved
+   70  ls
+   71  cd linux_practice
+   72  l
+   73  ls
+   74  cd practice_subdir
+   75  ls
+   76  mv notes.txt_moved notes.txt
+   77  ls
+   78  git add notes.txt
+   79  git commit -m "Added notes.txt with Linux command practices"
+   80  git config --global user.name nic_brrrt
+   81  git commit -m "Added notes.txt with Linux command practices"
+   82  Omit --global
+   83  commiy --global
+   84  git config --global user.name "nic_brrrt"
+   85  git commit -m "Added notes.txt with Linux commands practices"
+   86  git config --global user.email "nicbarrozo12@gmail.com"
+   87  git config --global user.name "nic_brrrt"
+   88  git commit -m  "Added notes.txt with Linux commands practices"
+   89  git push origin finalexam
+   90  ls
+   91  git push -u origin finalexam
+   92  git status
+   93  git log
+   94  git push -f origin finalexam
+   95  git branch
+   96  git status
+   97  git checkout finalexam
+   98  ls
+   99  git status
+  100  git add notes.txt
+  101  ls
+  102  git fetch origin
+  103  git push origin finalexam
+  104  git push origin
+  105  git push origin finalexam
+  106  git log
+  107  git checkout finalexam
+  108  git log
+  109  git branch
+  110  git log
+  111  git status
+  112  git log
+  113  git status
+  114  ls 
+  115  git branch -a
+  116  gh repo clone 230572287-BARROZO.git
+  117  gh auth login
+  118  cd 
+  119  cd 230572287-BARROZO
+  120  git checkout finalexam
+  121  history > exam_log.txt
