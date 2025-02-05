@@ -40,6 +40,10 @@ nav {
   font-weight: 600;
 }
 
+.nav-links a:hover 
+{
+  color: lightsteelblue;
+}
 .hero {
   background: url('TECHBRRT.png') no-repeat center center/cover;
   height: 100vh;
