@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNic - Build Your Own PC</title>
+  <meta name="description" content="Explore TechBRRT's top-notch services, including custom PC builds, part sales, and discount offers.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">TechNic</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pcbuild.html">PC</a></li>
+        <li><a href="parts.html">Parts</a></li>
+        <li><a href="buildapc.html">Build A PC</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" placeholder="Search PC Parts...">
+
+    </div>
+  </header>
+
+  <main>
+    <section class="component-selection">
+        <h2>Select Your Components</h2>
+        <div class="component">
+            <label for="cpu">Processor (CPU):</label>
+            <select id="cpu">
+                <option value="">Select CPU</option>
+                <option value="intel-i7">Intel Core i7</option>
+                <option value="amd-ryzen-7">AMD Ryzen 7</option>
+            </select>
+        </div>
+        <div class="component">
+            <label for="gpu">Graphics Card (GPU):</label>
+            <select id="gpu">
+                <option value="">Select GPU</option>
+                <option value="rtx-4070">NVIDIA RTX 4070</option>
+                <option value="rx-7800">AMD RX 7800</option>
+            </select>
+        </div>
+        <div class="component">
+            <label for="ram">Memory (RAM):</label>
+            <select id="ram">
+                <option value="">Select RAM</option>
+                <option value="16gb-ddr4">16GB DDR4</option>
+                <option value="32gb-ddr5">32GB DDR5</option>
+            </select>
+        </div>
+        <div class="component">
+            <label for="storage">Storage:</label>
+            <select id="storage">
+                <option value="">Select Storage</option>
+                <option value="1tb-ssd">1TB SSD</option>
+                <option value="2tb-hdd">2TB HDD</option>
+            </select>
+        </div>
+        <div class="component">
+            <label for="motherboard">Motherboard:</label>
+            <select id="motherboard">
+                <option value="">Select Motherboard</option>
+                <option value="asus-x570">ASUS X570</option>
+                <option value="msi-b550">MSI B550</option>
+            </select>
+        </div>
+        <div class="component">
+            <label for="psu">Power Supply Unit (PSU):</label>
+            <select id="psu">
+                <option value="">Select PSU</option>
+                <option value="650w">650W 80+ Gold</option>
+                <option value="750w">750W 80+ Platinum</option>
+            </select>
+        </div>
+        <div class="component">
+            <label for="cooling">Cooling System:</label>
+            <select id="cooling">
+                <option value="">Select Cooling</option>
+                <option value="air-cooler">Air Cooler</option>
+                <option value="liquid-cooler">Liquid Cooler</option>
+            </select>
+        </div>
+        <div class="component">
+            <label for="case">PC Case:</label>
+            <select id="case">
+                <option value="">Select Case</option>
+                <option value="mid-tower">Mid-Tower</option>
+                <option value="full-tower">Full-Tower</option>
+            </select>
+        </div>
+        <button id="buildBtn">Build My PC</button>
+    </section>
+</main>
+</body>
+</html>

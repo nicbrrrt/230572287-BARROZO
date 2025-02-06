@@ -3,53 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechBRRT - PC Parts</title>
+  <title>TechNic - PC Parts</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <nav>
-      <div class="logo"></div>
+      <div class="logo">TechNic</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="pcbuild.html">PC Build</a></li>
+        <li><a href="pcbuild.html">PC</a></li>
         <li><a href="parts.html">Parts</a></li>
+        <li><a href="buildapc.html">Build A PC</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
     <div class="search-container">
         <input type="text" placeholder="Search PC Parts...">
-        <button>Search</button>
       </div>
   </header>
 
-  <section class="parts-section">
-    
-    <div class="parts-category">GPU</div>
-    <div class="parts-category">CPU</div>
-    <div class="parts-category">RAM</div>
-    <div class="parts-category">Storage</div>
-    <div class="parts-category">Heatsink</div>
-    <div class="parts-category">Cases</div>
-    <div class="parts-category">Other</div>
+  <section class="categories">
+    <div class="category" id="cpu">
+      <h2>CPU</h2>
+    </div>
+    <div class="category" id="gpu">
+      <h2>GPU</h2>
+    </div>
+    <div class="category" id="ram">
+      <h2>RAM</h2>
+    </div>
+    <div class="category" id="motherboard">
+      <h2>MOTHERBOARD</h2>
+    </div>
+    <div class="category" id="cases">
+      <h2>CASES</h2>
+    </div>
+    <div class="category" id="psu">
+      <h2>PSU</h2>
+    </div>
+    <div class="category" id="others">
+      <h2>OTHERS</h2>
+    </div>
   </section>
 
-  <section class="parts-gallery">
-    <div class="part">
-      <img src="gpu1.jpg" alt="RTX 4070">
-      <h3>RTX 4070</h3>
-      <p><strong>VRAM:</strong> 12GB GDDR6X</p>
-      <p><strong>Price:</strong> $699</p>
+  <!-- Parts Showcase (this will be shown when a category is clicked) -->
+  <section class="parts">
+    <!-- GPU Example -->
+    <div class="part-category" id="gpu-parts">
+      <h2>Graphics Cards</h2>
+      <div class="product-card">
+        <img src="gpu-image.jpg" alt="Graphics Card" class="product-image">
+        <div class="product-info">
+          <h3>RTX 3080</h3>
+          <p>High-end performance for 4K gaming</p>
+          <button class="cta-button">View Details</button>
+        </div>
+      </div>
     </div>
 
-    <div class="part">
-      <img src="cpu1.jpg" alt="Intel i7-13700K">
-      <h3>Intel i7-13700K</h3>
-      <p><strong>Cores:</strong> 16 (8P+8E)</p>
-      <p><strong>Clock Speed:</strong> 3.4 GHz (5.4 GHz Turbo)</p>
+    <!-- CPU Example -->
+    <div class="part-category" id="cpu-parts">
+      <h2>Processors</h2>
+      <div class="product-card">
+        <img src="cpu-image.jpg" alt="Processor" class="product-image">
+        <div class="product-info">
+          <h3>Intel i9-11900K</h3>
+          <p>Powerful performance for gaming and productivity</p>
+          <button class="cta-button">View Details</button>
+        </div>
+      </div>
     </div>
+
 
   </section>
 </body>

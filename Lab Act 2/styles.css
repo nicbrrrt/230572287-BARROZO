@@ -1,184 +1,395 @@
-body {
-  font-family: 'Poppins', sans-serif;
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Orbitron:wght@600&display=swap');
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #ffffff;
+  overflow-x: hidden;
+  color: #ffffff;
+  scroll-padding: 100px;
 }
 
+/* Header */
 header {
-  background: url(TECHBRRT.png);
-  background-color: darkcyan;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  height: 150px;
-  background-position: 8cap;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-nav {
-  display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  background: rgb(2, 7, 24); /* Slight transparency */
+  padding: 15px 50px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 0 10px rgba(59, 255, 255, 0.5);
+
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5f7011;
+}
+
+/* Navigation */
+nav {
+  justify-content: center;
+  background: #1e293b;
+  padding: 10px 30px;
+  border-radius: 5ch;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  
-}
-
-.nav-links li {
-  margin: 0 15px;
+  gap: 20px;
 }
 
 .nav-links a {
-  color: black;
+  color: #00f0ff
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #ff6b6b;
+}
+
+.pc-builds h2 {
+  background-color: ;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(133, 14, 14);
+  margin-bottom: 20px;
+}
+
+.build {
+  background: rgb(2, 7, 24);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 20px 0;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.build:hover {
+  transform: scale(1.05);  /* Slight zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.build-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.build-container h3, p {
+  margin: auto;
+  padding: 10px 20px; /* Add padding for better clickability */
+  font-size: 15px; /* Adjust font size for readability */
+}
+
+
+.build img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .hero {
-  background: url('TECHBRRT.png') no-repeat center center/cover;
+  background: url('TECHNIC.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+
 }
 
 .hero-content {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
 }
 
 .cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background: darkcyan;
+  align-items: center;
+  background-color: #0c9eb1b6;
   color: white;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
   margin-top: 20px;
-  transition: background 0.3s ease;
+  width: 650px;
+  text-decoration: none;
 }
 
 .cta-button:hover {
-  background: navy;
+  background: #800101;
 }
 
-.about, .services, .contact {
-  padding: 50px;
-  text-align: center;
-}
-
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.service-card {
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-.service-card a
-{
-  text-decoration: none;
-  color: black;
-}
-.contact {
-  background: #333;
+.build-container button {
+  margin: 10px auto; /* Center-align the button */
+  padding: 10px 20px; /* Add padding for better clickability */
+  font-size: 16px; /* Adjust font size for readability */
+  background-color: #0c9eb1b6; /* Example button background */
   color: white;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.contact ul {
-  list-style: none;
-  padding: 0;
+.build-container button:hover {
+  background-color: #07616dd3; /* Hover effect for buttons */
+}
+
+/* Sections */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.section {
+  width: 100%;
+  max-width: 1100px;
+  padding: 60px 20px;
+  text-align: center;
+  background: #1e1e1e;
+  border-radius: 15px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.2);
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Categories Section */
+.categories {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.category {
+  background-color: rgba(18, 75, 30, 0.925);
+  color: #ffffff;
+  padding: 20px 40px;
+  margin:5px 3px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+
+.category:hover {
+  background-color: rgba(7, 56, 19, 0.904);
+  color: white;
+}
+
+.part{
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+.part-category {
+  margin-bottom: 40px;
+}
+
+.part-category h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.product-card {
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);  /* Slight zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-info {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.product-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 .search-container {
-  text-align: center;
-  margin: 20px auto;
+  margin-top: 12px;
+  max-width: 1000px;
 }
 
 .search-container input {
-  padding: 10px;
-  width: 300px;
+  padding: 12px;
+  width: 80%;
+  max-width: 500px;
+  border: 1px solid #00eaff;
+  border-radius: 5px;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+  background: rgb(170, 167, 167);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.component-selection h2 {
+  color: #00000000;
+}
+
+.component {
+  margin: 15px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.search-container button {
-  padding: 10px 15px;
-  background: navy;
+main button {
+  background-color: #007bff;
   color: white;
+  padding: 10px 15px;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
-  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
-.search-container button:hover {
-  background: blue;
+main button:hover {
+  background-color: #0056b3;
 }
 
-.parts-section {
+/* Carousel container */
+.carousel-container {
+  width: 90%;
+  max-width: 1200px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Snap scrolling horizontally */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+
   display: flex;
-  justify-content: center;
-  gap: 15px;
-  padding: 20px;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  position: relative;
+  margin: 100px auto; /* Add space above the carousel */
+  padding: 0 0c; /* Add padding to prevent clipping */
 }
 
-.parts-category {
-  padding: 10px 15px;
-  background: #ddd;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s;
-}
 
-.parts-category:hover {
-  background: darkcyan;
-  color: white;
-  transform: scale(1.1);
-}
-
-.pc-builds, .parts-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* Carousel */
+.carousel {
+  display: flex;
   gap: 20px;
-  padding: 20px;
+  justify-content: center; /* Center items within the scrolling area */
+  overflow-x: auto; /* Ensure horizontal scrolling */
+  width: 100%;
+  padding: 0 10px;
 }
 
-.pc-builds img, .parts-gallery img {
+
+/* Card styles */
+.card {
+  flex: 0 0 auto; /* Keep the card width fixed */
+  width: 150px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start; /* Snap to center when scrolling */
+}
+
+.card img {
   width: 100%;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  margin-bottom: 10px;
 }
 
-.pc-builds img:hover, .parts-gallery img:hover {
-  transform: scale(1.05);
+.card p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -186,55 +397,56 @@ nav {
   .nav-links {
     flex-direction: column;
     text-align: center;
+    gap: 10px;
   }
   .hero {
     height: 70vh;
   }
-}
-.slideshow-container {
-  position: relative;
-  max-width: 100%;
-  height: 400px;
-  margin: auto;
-  overflow: hidden;
-}
+  .search-container {
+    width: 90%;
+    margin: 30px auto 0;
+  }
+  .categories {
+    flex-direction: column;
+  }
 
-.slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-  animation: slideshow 9s infinite;
-  background-size: contain;
-  background-position: center;
-}
+  .category {
+    margin-bottom: 10px;
+  }
 
-.slide:nth-child(1) { animation-delay: 0s; }
-.slide:nth-child(2) { animation-delay: 3s; }
-.slide:nth-child(3) { animation-delay: 6s; }
+  .product-card {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  .product-image {
+    width: 100%;
+    max-width: 300px;
+  }
 
-.slide-text {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 20px;
-}
+  .product-info {
+    padding-left: 0;
+    text-align: center;
+  }
+  .build-container h3, p {
+    width: 90%; /* Reduce width for smaller screens */
+    font-size: 14px; /* Adjust font size for readability */
+  }
 
-@keyframes slideshow {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  30% { opacity: 1; }
-  40% { opacity: 0; }
-  100% { opacity: 0; }
+  .build-container button {
+    width: 90%; /* Buttons should fit within the container */
+    font-size: 14px;
+    padding: 8px; /* Add padding for easier touch interaction */
+  }
+
+  .build img {
+    border-radius: 8px; /* Adjust border radius for smaller screens */
+  }
+  .carousel-container {
+    margin: 120px auto 20px; /* Add space for the header */
+  }
+
+  .card {
+    width: 120px; /* Shrink card size for smaller screens */
+  }
 }
