@@ -125,6 +125,10 @@ nav ul li a {
   border-radius: 10px;
 }
 
+.nav-links a:hover 
+{
+  color: lightsteelblue;
+}
 .hero {
   background: url('TECHNIC.jpg') no-repeat center center/cover;
   height: 100vh;
