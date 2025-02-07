@@ -28,7 +28,7 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
-  box-shadow: 0 0 10px rgba(59, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(43, 20, 20, 0.5);
 
 }
 
@@ -44,7 +44,7 @@ header {
 /* Navigation */
 nav {
   justify-content: center;
-  background: #1e293b;
+  background: #091a35;
   padding: 10px 30px;
   border-radius: 5ch;
 }
@@ -73,7 +73,7 @@ nav ul li a {
 }
 
 .nav-links a {
-  color: #00f0ff
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease-in-out;
@@ -84,10 +84,9 @@ nav ul li a {
 }
 
 .pc-builds h2 {
-  background-color: ;
   text-align: center;
   margin-top: 20px;
-  color: rgb(133, 14, 14);
+  color: rgb(75, 75, 75);
   margin-bottom: 20px;
 }
 
@@ -147,7 +146,7 @@ nav ul li a {
 
 .cta-button {
   align-items: center;
-  background-color: #0c9eb1b6;
+  background-color: #045cff;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -164,10 +163,10 @@ nav ul li a {
 }
 
 .build-container button {
-  margin: 10px auto; /* Center-align the button */
-  padding: 10px 20px; /* Add padding for better clickability */
-  font-size: 16px; /* Adjust font size for readability */
-  background-color: #0c9eb1b6; /* Example button background */
+  margin: 10px auto; 
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #002663; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -176,10 +175,9 @@ nav ul li a {
 }
 
 .build-container button:hover {
-  background-color: #07616dd3; /* Hover effect for buttons */
+  background-color: #093f94
 }
 
-/* Sections */
 .main-content {
   display: flex;
   flex-direction: column;
@@ -204,78 +202,103 @@ nav ul li a {
   background-color: #f4f4f4;
 }
 
-/* Categories Section */
 .categories {
   display: flex;
   justify-content: center;
   margin: 30px 0;
 }
 
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
 .category {
-  background-color: rgba(18, 75, 30, 0.925);
-  color: #ffffff;
-  padding: 20px 40px;
-  margin:5px 3px;
+  background-color: #091a35;
+  padding: 20px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  border-radius: 2px;
-  transition: background-color 0.3s;
 }
 
 .category:hover {
-  background-color: rgba(7, 56, 19, 0.904);
-  color: white;
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.part{
-  padding: 60px 20px;
-  background-color: #f4f4f4;
+.category h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
-.part-category {
-  margin-bottom: 40px;
+.parts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  color: #000000  ;
 }
 
-.part-category h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.product-card {
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.parts button {
+  background-color: #091a35;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
   border-radius: 8px;
-  margin: 10px 0;
-  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.parts button:hover {
+  background-color: #0d3b86;
+}
+.product-card {
+  background-color: #bebebe;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .product-card:hover {
-  transform: scale(1.05);  /* Slight zoom effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .product-image {
-  width: 150px;
-  height: auto;
-  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
 .product-info {
-  flex-grow: 1;
-  padding-left: 20px;
+  padding: 15px;
+  text-align: center;
 }
 
 .product-info h3 {
-  font-size: 1.6rem;
+  font-size: 20px;
   margin-bottom: 10px;
+  color: rgb(0, 0, 0);
 }
 
 .product-info p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+  font-size: 14px;
+  color: #000000;
 }
 
 .search-container {
@@ -296,7 +319,7 @@ nav ul li a {
 main {
   margin: 20px;
   padding: 20px;
-  background: rgb(170, 167, 167);
+  background: #091a35;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 600px;
@@ -304,8 +327,9 @@ main {
   margin-right: auto;
 }
 
+
 .component-selection h2 {
-  color: #00000000;
+  color: #ffffff;
 }
 
 .component {
@@ -356,28 +380,92 @@ main button:hover {
   padding: 0 0c; /* Add padding to prevent clipping */
 }
 
-
-/* Carousel */
-.carousel {
-  display: flex;
-  gap: 20px;
-  justify-content: center; /* Center items within the scrolling area */
-  overflow-x: auto; /* Ensure horizontal scrolling */
-  width: 100%;
-  padding: 0 10px;
+.about {
+  background-color: #f7f7f7;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  text-align: center;
 }
 
 
-/* Card styles */
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #091a35;
+}
+
+.about p {
+  font-size: 16px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #091a35;
+}
+
+.contact p {
+  font-size: 16px;
+  color: #444;
+  margin: 5px 0;
+}
+
+.customer-service {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  text-align: center;
+}
+.customer-service:hover {
+  background-color: lightgrey;
+  cursor: pointer
+}
+.customer-service h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #091a35;
+}
+
+.customer-service p {
+  font-size: 15px;
+  color: #444;
+  margin: 8px 0;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 0 10px;
+}
+
 .card {
-  flex: 0 0 auto; /* Keep the card width fixed */
+  flex: 0 0 auto; 
   width: 150px;
   text-align: center;
   background-color: #f9f9f9;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  scroll-snap-align: start; /* Snap to center when scrolling */
+  scroll-snap-align: start; 
 }
 
 .card img {
@@ -393,7 +481,6 @@ main button:hover {
   color: #333;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -433,24 +520,24 @@ main button:hover {
     text-align: center;
   }
   .build-container h3, p {
-    width: 90%; /* Reduce width for smaller screens */
-    font-size: 14px; /* Adjust font size for readability */
+    width: 90%; 
+    font-size: 14px;
   }
 
   .build-container button {
-    width: 90%; /* Buttons should fit within the container */
+    width: 90%;
     font-size: 14px;
-    padding: 8px; /* Add padding for easier touch interaction */
+    padding: 8px;
   }
 
   .build img {
-    border-radius: 8px; /* Adjust border radius for smaller screens */
+    border-radius: 8px;
   }
   .carousel-container {
-    margin: 120px auto 20px; /* Add space for the header */
+    margin: 120px auto 20px; 
   }
 
   .card {
-    width: 120px; /* Shrink card size for smaller screens */
+    width: 120px; 
   }
 }
